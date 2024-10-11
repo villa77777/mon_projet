@@ -1,23 +1,22 @@
 class FizzBuzz:
 
-    #def __init__(self, nom) -> None:
-        #self.nom = nom
     
-    #def factorielle(self):
-        #return (120)
 
 
-    def __init__(self, start=1, end=100):
-        self.start = start
-        self.end = end
+    def __init__(self, nom):
+        self.nom = nom
 
     def affiche(self):
-        for i in range(self.start, self.end + 1):
+        result=""
+        for i in range(1, 101):
             if i % 15 == 0:
-                print("Frisbee")
-            elif i % 3 == 0:
-                print("Fizz")
+                result+="FrisBee"
             elif i % 5 == 0:
-                print("Buzz")
+                result+="Buzz"
+            elif i % 3 == 0:
+                result+="Fizz"
             else:
-                print(i)
+                result+=str(i)
+        
+        print(result)
+        return result
