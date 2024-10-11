@@ -4,4 +4,4 @@ class FizzBuzz:
         self.nom = nom
     
     def factorielle(self):
-        pass
+        return (120)
