@@ -9,7 +9,7 @@ class TestFactorielle(unittest.TestCase):
           self.instance = FizzBuzz("MaClasse")
 
     def test_factorielle_de_5(self):
-            self.assertEqual(factorielle(5), 120)
+            self.assertEqual(self.instance.factorielle(5), 120)
 
 
 
